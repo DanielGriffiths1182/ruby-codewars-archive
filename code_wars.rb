@@ -8,3 +8,13 @@ end
 def find_short(s)
   s.split.map(&:size).min
 end
+
+#breaking chocalte pieces algorithm
+def break_chocolate(n, m)
+  b = (n * m) - 1
+  if b < 0
+    return 0
+  else
+    return b
+  end
+end
