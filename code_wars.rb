@@ -18,3 +18,8 @@ def break_chocolate(n, m)
     return b
   end
 end
+
+#return integers in descending order
+def descending_order(n)
+  n.to_s.chars.sort.reverse.join.to_i
+end
