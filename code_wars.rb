@@ -48,3 +48,16 @@ end
 def friend(friends)
    friends.reject { |a| a.length != 4 }
 end
+
+#determines a prime number
+def isPrime(num)
+  if num < 2
+    return false
+  end
+  for d in 2..(num - 1)
+    if (num % d) == 0
+    return false
+    end
+  end
+  return true
+end
