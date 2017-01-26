@@ -23,3 +23,17 @@ end
 def descending_order(n)
   n.to_s.chars.sort.reverse.join.to_i
 end
+
+
+#Write a function, persistence, that takes in a positive parameter num and returns
+#its multiplicative persistence, which is the number of times you must multiply the
+#digits in num until you reach a single digit.
+def persistence(n)
+	a = 0
+		while n.to_s.length > 1
+		    array = n.to_s.split("")
+		    a += 1
+		    n = array.inject { |y,x| y.to_i * x.to_i }
+		end
+	a
+end
