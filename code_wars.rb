@@ -37,3 +37,9 @@ def persistence(n)
 		end
 	a
 end
+
+#sum of the two smallest numbers in array
+def sum_two_smallest_numbers(numbers)
+  numbers.sort!
+  return numbers[1] + numbers[0]
+end
