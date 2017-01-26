@@ -43,3 +43,8 @@ def sum_two_smallest_numbers(numbers)
   numbers.sort!
   return numbers[1] + numbers[0]
 end
+
+#reject all array names that dont have the length of four, whom are your friends
+def friend(friends)
+   friends.reject { |a| a.length != 4 }
+end
