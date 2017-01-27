@@ -77,3 +77,11 @@ def solution(number)
   end
   return array.inject(0){ |sum , x | sum + x }
 end
+
+
+#Write a function that will find all the anagrams of a word from a list.
+#You will be given two inputs a word and an array with words. You should 
+#return an array of all the anagrams or an empty array if there are none.
+def anagrams(word, words)
+  words.select { |w| w.chars.sort.join == word.chars.sort.join }
+end
