@@ -119,3 +119,13 @@ end
 def hoop_count n
 	(n < 10) ? "Keep at it until you get it" : "Great, now move on to tricks"
 end
+
+#15    finding the new value in an array when provided the average that needs to be attaind
+def new_avg(arr, newavg)
+    if (arr == []) then sm = 0  else sm = arr.inject{ |sum,x| sum + x } end
+    add = (arr.length + 1) * newavg - sm
+    if (add > 0) then
+        return add.ceil
+    end
+    raise ArgumentError, "Expected New Average is too low"
+end
