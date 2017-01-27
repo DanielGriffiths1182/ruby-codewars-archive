@@ -66,3 +66,14 @@ end
 def divisors(n)
   (2..n - 1).collect { |x| [x] if ((n/x) * x) == n}.compact.flatten
 end
+
+#return sum of a multiples of 3 and 5 up to (number)
+def solution(number)
+  array = Array.new
+  for x in 1..number - 1
+    if x % 3 == 0 || x % 5 == 0
+     array.push(x)
+    end
+  end
+  return array.inject(0){ |sum , x | sum + x }
+end
