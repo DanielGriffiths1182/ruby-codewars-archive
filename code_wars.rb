@@ -61,3 +61,8 @@ def isPrime(num)
   end
   return true
 end
+
+#return an array of all divisors execpt for 1 and n
+def divisors(n)
+  (2..n - 1).collect { |x| [x] if ((n/x) * x) == n}.compact.flatten
+end
