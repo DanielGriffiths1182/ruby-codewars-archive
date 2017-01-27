@@ -96,3 +96,12 @@ def group_check s
     s = c
   end
 end
+
+#determines even or odd
+def even_or_odd(number)
+  if number % 2 == 0
+    return "Even"
+  else
+    return "Odd"
+  end
+end
