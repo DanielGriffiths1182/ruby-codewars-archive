@@ -80,8 +80,19 @@ end
 
 
 #Write a function that will find all the anagrams of a word from a list.
-#You will be given two inputs a word and an array with words. You should 
+#You will be given two inputs a word and an array with words. You should
 #return an array of all the anagrams or an empty array if there are none.
 def anagrams(word, words)
   words.select { |w| w.chars.sort.join == word.chars.sort.join }
+end
+
+
+#(), ({}) is right, (} is wrong
+def group_check s
+  loop do
+    return true if s.empty?
+    c = s.gsub /(\{\})|(\[\])|(\(\))/, ''
+    return false if c == s
+    s = c
+  end
 end
