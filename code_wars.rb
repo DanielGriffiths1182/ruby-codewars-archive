@@ -1,15 +1,15 @@
-#take out vowels from string
+#1  take out vowels from string
 def disemvowel(str)
   result = str.delete 'aeiouAEIOU'
   return result
 end
 
-#shortest string in array
+#2  shortest string in array
 def find_short(s)
   s.split.map(&:size).min
 end
 
-#breaking chocalte pieces algorithm
+#3   breaking chocalte pieces algorithm
 def break_chocolate(n, m)
   b = (n * m) - 1
   if b < 0
@@ -19,13 +19,13 @@ def break_chocolate(n, m)
   end
 end
 
-#return integers in descending order
+#4    return integers in descending order
 def descending_order(n)
   n.to_s.chars.sort.reverse.join.to_i
 end
 
 
-#Write a function, persistence, that takes in a positive parameter num and returns
+#5    Write a function, persistence, that takes in a positive parameter num and returns
 #its multiplicative persistence, which is the number of times you must multiply the
 #digits in num until you reach a single digit.
 def persistence(n)
@@ -38,18 +38,18 @@ def persistence(n)
 	a
 end
 
-#sum of the two smallest numbers in array
+#6    sum of the two smallest numbers in array
 def sum_two_smallest_numbers(numbers)
   numbers.sort!
   return numbers[1] + numbers[0]
 end
 
-#reject all array names that dont have the length of four, whom are your friends
+#7    reject all array names that dont have the length of four, whom are your friends
 def friend(friends)
    friends.reject { |a| a.length != 4 }
 end
 
-#determines a prime number
+#8     determines a prime number
 def isPrime(num)
   if num < 2
     return false
@@ -62,12 +62,12 @@ def isPrime(num)
   return true
 end
 
-#return an array of all divisors execpt for 1 and n
+#9    return an array of all divisors execpt for 1 and n
 def divisors(n)
   (2..n - 1).collect { |x| [x] if ((n/x) * x) == n}.compact.flatten
 end
 
-#return sum of a multiples of 3 and 5 up to (number)
+#10    return sum of a multiples of 3 and 5 up to (number)
 def solution(number)
   array = Array.new
   for x in 1..number - 1
@@ -79,7 +79,7 @@ def solution(number)
 end
 
 
-#Write a function that will find all the anagrams of a word from a list.
+#11    Write a function that will find all the anagrams of a word from a list.
 #You will be given two inputs a word and an array with words. You should
 #return an array of all the anagrams or an empty array if there are none.
 def anagrams(word, words)
@@ -87,7 +87,7 @@ def anagrams(word, words)
 end
 
 
-#(), ({}) is right, (} is wrong
+#12    (), ({}) is right, (} is wrong
 def group_check s
   loop do
     return true if s.empty?
@@ -97,7 +97,7 @@ def group_check s
   end
 end
 
-#determines even or odd
+#13    determines even or odd
 def even_or_odd(number)
   if number % 2 == 0
     return "Even"
