@@ -201,3 +201,14 @@ def how_much_i_love_you(nb_petals)
   options = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
   options[(nb_petals-1) % options.size]
 end
+
+#22
+# Test.assert_equals(remove("Hi!") , "Hi")
+# Test.assert_equals(remove("Hi!!!") ,"Hi!!")
+# Test.assert_equals(remove("!Hi") , "!Hi")
+# Test.assert_equals(remove("!Hi!") , "!Hi")
+# Test.assert_equals(remove("Hi! Hi!") , "Hi! Hi")
+# Test.assert_equals(remove("Hi") , "Hi")
+def remove(s)
+s.chomp('!')
+end
