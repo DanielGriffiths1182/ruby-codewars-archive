@@ -249,3 +249,12 @@ def sum_array(arr)
     0
   end
 end
+
+#27    special answer for a special someone
+def greet(name)
+  if name == "Johnny"
+    return "Hello, my love!"
+  else
+    return "Hello, #{name}!"
+  end
+end
