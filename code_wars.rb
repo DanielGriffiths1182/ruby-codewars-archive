@@ -218,3 +218,8 @@ def count_positives_sum_negatives(lst)
   positives, negatives = lst.partition(&:positive?)
   [ positives.length, negatives.inject(0, &:+) ]
 end
+
+#24 replace all vowels with '!'
+def replace(s)
+  s.gsub(/[aeiouAEIOU]/, '!')
+end
