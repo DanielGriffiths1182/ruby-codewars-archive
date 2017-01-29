@@ -162,3 +162,17 @@ end
 def basic_op(operator, value1, value2)
   return value1.send(operator, value2)
 end
+
+
+#19    in string if < 5 turn to 0, 5 and up turn to 1
+def fake_bin(s)
+  s.chars.map { |s| s < "5" ? "0" : "1" }.join
+end
+
+def fake_bin(s)
+  s.tr('1-9', '00001')
+end
+
+def fake_bin(str)
+  str.split('').map{ |x| x.to_i < 5 ? 0 : 1 }.join
+end
