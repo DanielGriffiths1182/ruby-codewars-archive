@@ -212,3 +212,9 @@ end
 def remove(s)
 s.chomp('!')
 end
+
+#23    count positive numbers, sum negative number in array, and return [0][1] back
+def count_positives_sum_negatives(lst)
+  positives, negatives = lst.partition(&:positive?)
+  [ positives.length, negatives.inject(0, &:+) ]
+end
