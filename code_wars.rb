@@ -182,3 +182,17 @@ def duty_free(price, discount, holiday_cost)
    total = holiday_cost / (price * (discount / 100.to_f))
    return total.to_i
 end
+
+#21    picking flower petals, how much does she love you, she loves you not, etc...
+def how_much_i_love_you(nb_petals)
+  how_much = {
+    1 => "some",
+    2 => "a little",
+    3 => "a lot",
+    4 => "passionately",
+    5 => "tons",
+    6 => "not at all",
+    7 => "I love you"
+  }
+  return how_much[nb_petals]
+end
