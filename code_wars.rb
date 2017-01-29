@@ -228,3 +228,16 @@ end
 def get_volume_of_cuboid(length, width, height)
   return length * width * height
 end
+
+#26  remove smallest and largest values from array and get the sum of whats left, clumsy first try
+def sum_array(arr)
+  if arr == [] || arr == nil
+    return 0
+  end
+  arr.sort!.delete_at(0)
+  if arr == [] || arr == nil
+    return 0
+  end
+  arr.delete_at(arr.index(arr.max))
+  return arr.inject(0, :+)
+end
