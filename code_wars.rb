@@ -129,3 +129,12 @@ def new_avg(arr, newavg)
     end
     raise ArgumentError, "Expected New Average is too low"
 end
+
+# 16    return a list of integers 1..n 
+def pre_fizz(n)
+  x = Array.new
+  for a in 1..n
+    x.push(a)
+  end
+  return x
+end
