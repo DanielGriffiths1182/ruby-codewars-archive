@@ -157,3 +157,8 @@ end
 def reverse(string)
   return string.split.reverse.join(' ')
 end
+
+#18   with these arguments integer integer and operator, make it run... (.send is cool, just learned it)
+def basic_op(operator, value1, value2)
+  return value1.send(operator, value2)
+end
