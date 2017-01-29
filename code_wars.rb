@@ -150,3 +150,10 @@ end
 def pre_fizz(n)
   (1..n).to_a
 end
+
+
+#17   Reverse words in a string (forgot split creates an array, was making nested arrays prior
+#to solution)
+def reverse(string)
+  return string.split.reverse.join(' ')
+end
