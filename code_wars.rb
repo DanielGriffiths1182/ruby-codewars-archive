@@ -223,3 +223,8 @@ end
 def replace(s)
   s.gsub(/[aeiouAEIOU]/, '!')
 end
+
+#25    get volume of a cube
+def get_volume_of_cuboid(length, width, height)
+  return length * width * height
+end
