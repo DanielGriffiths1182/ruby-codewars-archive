@@ -196,3 +196,8 @@ def how_much_i_love_you(nb_petals)
   }
   return how_much[nb_petals]
 end
+
+def how_much_i_love_you(nb_petals)
+  options = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
+  options[(nb_petals-1) % options.size]
+end
