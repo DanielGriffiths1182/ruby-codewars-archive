@@ -176,3 +176,9 @@ end
 def fake_bin(str)
   str.split('').map{ |x| x.to_i < 5 ? 0 : 1 }.join
 end
+
+#20    how many bottles do you have to buy to make the discount worth it for the holiday
+def duty_free(price, discount, holiday_cost)
+   total = holiday_cost / (price * (discount / 100.to_f))
+   return total.to_i
+end
