@@ -276,3 +276,7 @@ def longest(a1, a2)
   b.split('').each {|x| target << x unless target.include?(x) }
   return target.sort.join('')
 end
+
+def longest(a, b)
+  (a+b).chars.uniq.sort.join
+end
