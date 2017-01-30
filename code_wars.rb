@@ -280,3 +280,16 @@ end
 def longest(a, b)
   (a+b).chars.uniq.sort.join
 end
+
+#(((Issue with test cases being incongruent with description, I noted on codewars)))
+#31   return first half of the letters of a string, but improved a little because of test case Issue
+def testit(s)
+  a = s.length / 2
+  if s.length <= 1
+    return s
+  elsif s.length == 2
+    return s.slice(0)
+  else
+    s.slice(s.length / 2..-1)
+  end
+end
