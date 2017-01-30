@@ -259,7 +259,12 @@ def greet(name)
   end
 end
 
-#celsius to romer formula
+#28   celsius to romer formula
 def celsius_to_romer(temp)
  return temp * 21/40.to_f + 7.5
+end
+
+#29    approx_root sqrt
+def approx_root(n)
+  Math.sqrt(n).round(2)
 end
