@@ -268,3 +268,11 @@ end
 def approx_root(n)
   Math.sqrt(n).round(2)
 end
+
+#30  take 2 strings and remove non unique characters, then sort the new string alphabetically
+def longest(a1, a2)
+  b = a1 + a2
+  target = Array.new
+  b.split('').each {|x| target << x unless target.include?(x) }
+  return target.sort.join('')
+end
