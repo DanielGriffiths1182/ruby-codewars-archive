@@ -300,3 +300,12 @@ def positive_sum(arr)
   arr.delete_if { |x| x < 0 }
   arr.empty? ? 0 : arr.inject(:+)
 end
+
+def positive_sum(arr)
+  arr.select{|x| x > 0}.reduce(0, :+)
+end
+
+#33    take a number and seperate the digits pushed into an array, in reversed order
+def digitize(n)
+  n.to_s.chars.reverse.map(&:to_i)
+end
