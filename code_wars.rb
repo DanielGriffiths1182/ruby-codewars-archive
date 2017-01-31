@@ -293,3 +293,10 @@ def testit(s)
     s.slice(s.length / 2..-1)
   end
 end
+
+
+#32    Return sum of positive integers in array, 0 if empty
+def positive_sum(arr)
+  arr.delete_if { |x| x < 0 }
+  arr.empty? ? 0 : arr.inject(:+)
+end
