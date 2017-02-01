@@ -324,3 +324,13 @@ end
 def format_money(amount)
   '$%.2f' % amount
 end
+
+
+#36   find minimum and maximum values in a list
+def min(list)
+  list.sort[0]
+end
+
+def max(list)
+  list.sort[-1]
+end
