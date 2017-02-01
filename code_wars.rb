@@ -314,3 +314,9 @@ end
 def opposite(n)
  n <= 0 ? n.abs : -n
 end
+
+#35   create a string representing a dollar amount from an integer or float
+def format_money(amount)
+  a = sprintf '%.2f', amount
+  "$" + a
+end
