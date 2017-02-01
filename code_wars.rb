@@ -29,13 +29,13 @@ end
 #its multiplicative persistence, which is the number of times you must multiply the
 #digits in num until you reach a single digit.
 def persistence(n)
-	a = 0
-		while n.to_s.length > 1
-		    array = n.to_s.split("")
-		    a += 1
-		    n = array.inject { |y,x| y.to_i * x.to_i }
-		end
-	a
+  a = 0
+  while n.to_s.length > 1
+    array = n.to_s.split("")
+    a += 1
+    n = array.inject { |y,x| y.to_i * x.to_i }
+  end
+  a
 end
 
 #6    sum of the two smallest numbers in array
