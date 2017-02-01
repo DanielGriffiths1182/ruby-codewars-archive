@@ -320,3 +320,7 @@ def format_money(amount)
   a = sprintf '%.2f', amount
   "$" + a
 end
+
+def format_money(amount)
+  '$%.2f' % amount
+end
