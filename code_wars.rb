@@ -334,3 +334,8 @@ end
 def max(list)
   list.sort[-1]
 end
+
+#37  find (nth) digit of a number 
+def find_digit(num, nth)
+  nth <= 0 ? -1 : num.to_s.split('')[-nth].to_i
+end
