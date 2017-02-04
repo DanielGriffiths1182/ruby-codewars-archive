@@ -349,3 +349,13 @@ end
 def get_average(marks)
   marks.inject(:+) / marks.length
 end
+
+# concat arrays, sorted and unique values
+def merge_arrays(a, b)
+  (a | b).sort
+end
+
+def merge_arrays(a, b)
+  c = a.concat b
+  c.sort.uniq
+end
