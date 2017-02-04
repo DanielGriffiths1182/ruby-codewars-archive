@@ -335,7 +335,17 @@ def max(list)
   list.sort[-1]
 end
 
-#37  find (nth) digit of a number 
+#37  find (nth) digit of a number
 def find_digit(num, nth)
   nth <= 0 ? -1 : num.to_s.split('')[-nth].to_i
+end
+
+#38    average of an array of integers, returned as whole number
+def get_average(marks)
+  average = marks.inject{ |sum, el| sum + el }.to_f / marks.size
+  average.to_i
+end
+
+def get_average(marks)
+  marks.inject(:+) / marks.length
 end
