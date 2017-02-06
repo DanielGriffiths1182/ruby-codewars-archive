@@ -375,3 +375,8 @@ end
 def remove_every_other(arr)
   arr.select.with_index { |_,idx| idx.even? }
 end
+
+#42    make sure the watermelon can be devided so that each (2) people can have an even number of pieces
+def divide(weigth)
+  weigth % 2 == 0 && weigth > 2 ? true : false
+end
