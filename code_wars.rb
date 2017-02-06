@@ -371,3 +371,7 @@ def remove_every_other(arr)
   arr.map.with_index{|v,i| i % 2 == 0 ? b << v : v }
   return b
 end
+
+def remove_every_other(arr)
+  arr.select.with_index { |_,idx| idx.even? }
+end
