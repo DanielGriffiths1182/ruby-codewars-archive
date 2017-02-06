@@ -380,3 +380,7 @@ end
 def divide(weigth)
   weigth % 2 == 0 && weigth > 2 ? true : false
 end
+
+def divide(weight)
+  weight > 2 && weight.even?
+end
