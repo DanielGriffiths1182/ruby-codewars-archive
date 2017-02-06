@@ -364,3 +364,10 @@ end
 def remove_odd_numbers_from_array(a)
   a.reject(&:odd?)
 end
+
+#41 delete every other element in array
+def remove_every_other(arr)
+  b = Array.new
+  arr.map.with_index{|v,i| i % 2 == 0 ? b << v : v }
+  return b
+end
