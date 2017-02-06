@@ -384,3 +384,8 @@ end
 def divide(weight)
   weight > 2 && weight.even?
 end
+
+#43   fix the operation so that it accurately calculates division
+def divide_numbers x, y
+  x / y.to_f
+end
