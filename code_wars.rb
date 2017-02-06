@@ -393,3 +393,9 @@ end
 def divide_numbers x, y
   x.fdiv y
 end
+
+
+# 44 multiple (n) by 5-raised to the power of the number of digits in n
+def multiply(n)
+  n < 0 ? n * 5 ** (n.to_s.length - 1) : n * 5 ** n.to_s.length
+end
