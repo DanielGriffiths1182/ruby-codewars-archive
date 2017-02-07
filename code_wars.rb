@@ -399,3 +399,8 @@ end
 def multiply(n)
   n < 0 ? n * 5 ** (n.to_s.length - 1) : n * 5 ** n.to_s.length
 end
+
+#45    round down with .floor
+def litres(time)
+  time.floor / 2
+end
