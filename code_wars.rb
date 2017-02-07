@@ -409,3 +409,8 @@ end
 def remove_char(s)
   s.slice(1..-2)
 end
+
+#47    remove the first character from string
+def get_age(age)
+  age.split('').slice(0).to_i
+end
