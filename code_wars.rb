@@ -414,3 +414,7 @@ end
 def get_age(age)
   age.split('').slice(0).to_i
 end
+
+def get_age(a)
+  a[0].to_i
+end
