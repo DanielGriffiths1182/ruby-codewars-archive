@@ -418,3 +418,8 @@ end
 def get_age(a)
   a[0].to_i
 end
+
+#47 Using MathPI
+def annulus_area(r)
+  (Math::PI * (r / 2.0) ** 2).round(2)
+end
