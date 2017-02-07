@@ -404,3 +404,8 @@ end
 def litres(time)
   time.floor / 2
 end
+
+#46   remove first and last element of an array
+def remove_char(s)
+  s.slice(1..-2)
+end
