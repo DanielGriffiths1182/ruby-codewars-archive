@@ -423,3 +423,33 @@ end
 def annulus_area(r)
   (Math::PI * (r / 2.0) ** 2).round(2)
 end
+
+
+# 48    Given two points P and Q, output the symmetric point of
+# point P about Q. Each argument is a two-element array of integers
+# representing the point's X and Y coordinates. Output should be in
+# the same format, giving the X and Y coordinates of point P1. You do
+# not have to validate the input.
+def symmetric_point(p, q)
+  a = Array.new
+  i = 1
+  new = (p).zip(q).flatten
+  while i <= 3 do
+    a << new[i] + (new[i] - new[(i - 1)])
+    i += 2
+  end
+  return a
+end
+
+def symmetric_point(p, q)
+    dx = q[0] - p[0]
+    dy = q[1] - p[1]
+    p1 = [dx + q[0], dy + q[1]]
+    return p1
+end
+
+def symmetric_point(p, q)
+ x = (q[0] - p[0]) + q[0]
+ y = (q[1] - p[1]) + q[1]
+    return [x, y]
+end
