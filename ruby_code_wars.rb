@@ -453,3 +453,21 @@ def symmetric_point(p, q)
  y = (q[1] - p[1]) + q[1]
     return [x, y]
 end
+
+
+# 49   So this function should return the first pair of two prime numbers
+# spaced with a gap of g between the limits m, n if these numbers exist otherwise
+# nil or null or None or Nothing (depending on the language). In C++ return in such a case {0, 0}.
+def gap(g, m, n)
+  m = m+1 if m % 2 == 0
+  (m..n).each do |i|
+    next unless is_prime(i)
+    return [i, i+g] if is_prime(i+g) && (i+1..i+g-1).none? { |num| is_prime num }
+  end
+  nil
+end
+
+def is_prime(n)
+  (2..Math.sqrt(n).round).each { |i| return false if n % i == 0 }
+  true
+end
