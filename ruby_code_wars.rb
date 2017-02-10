@@ -471,3 +471,20 @@ def is_prime(n)
   (2..Math.sqrt(n).round).each { |i| return false if n % i == 0 }
   true
 end
+
+
+#50   Find the average between each index of array
+def averages(arr)
+  if arr == nil || arr.size <= 1
+    return []
+  else
+    result = []
+    arr.take(arr.size - 1).each_with_index do |value,index|
+      avg = (value + arr[index + 1]) / 2.0
+      avg = avg.to_i if avg == avg.to_i
+      result << avg
+    end
+
+    return result
+  end
+end
