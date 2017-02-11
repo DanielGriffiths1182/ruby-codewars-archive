@@ -506,3 +506,26 @@ def bar_triang(p1,p2,p3)
   y = (p1[1] + p2[1] + p3[1]) / 3.0
   [x.round(4),y.round(4)]
 end
+
+# find lowest integer that doesnt belong to array, greater than 0
+def next_id(arr)
+  x = 0
+  while x <= arr.max + 1 do
+    if !arr.include?(x)
+      return x
+    end
+    x += 1
+  end
+end
+
+def next_id(arr)
+  ([*(0..arr.size)] - arr).min
+end
+
+def next_id(arr)
+  i = 0
+  loop do
+    return i unless arr.include?(i)
+    i += 1
+  end
+end
