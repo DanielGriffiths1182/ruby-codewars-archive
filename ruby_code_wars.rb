@@ -529,3 +529,12 @@ def next_id(arr)
     i += 1
   end
 end
+
+def next_id(arr)
+  a = 0
+  while arr.include?(a)
+    a += 1
+  end
+  a
+
+end
