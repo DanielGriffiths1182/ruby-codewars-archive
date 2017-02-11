@@ -507,7 +507,7 @@ def bar_triang(p1,p2,p3)
   [x.round(4),y.round(4)]
 end
 
-# find lowest integer that doesnt belong to array, greater than 0
+#52 find lowest integer that doesnt belong to array, greater than 0
 def next_id(arr)
   x = 0
   while x <= arr.max + 1 do
@@ -536,5 +536,14 @@ def next_id(arr)
     a += 1
   end
   a
+
+#53  find the number of times a character is repeated (char) in string (string)
+def count_char(string, char)
+  string.downcase.chars.count(char.downcase)
+end
+
+def count_char(string, char)
+  string.scan(/#{char}/i).size
+end
 
 end
