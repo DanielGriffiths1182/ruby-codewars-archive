@@ -551,3 +551,31 @@ def calculate_ratio(w,h)
   a = w / h.to_f.rationalize(0.01)
   a.to_s.length > 3 && a.to_s.length < 5 ? "#{a.to_s.split('')[0]}#{a.to_s.split('')[1]}:#{a.to_s.split('')[03]}#{a.to_s.split('')[4]}" : "#{a.to_s.split('')[0]}:#{a.to_s.split('')[2]}"
 end
+
+
+#55 Given a string of integers, count how many times that
+#   integer repeats itself, then return a string showing the count and the integer.
+#   countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)
+def count_me(data)
+  return '' if data.to_i.to_s != data
+  data_string = data.to_s
+  count = 1
+  output = ''
+
+  i = 0
+  while i < data_string.length - 1
+    if data_string[i] == data_string[i + 1]
+    count += 1
+    else
+    output << count.to_s << data_string[i]
+    count =1
+    end
+  i += 1
+  end
+  output << count.to_s << data_string[i]
+end
+
+def count_me(data)
+  return "" unless /^\d+$/ === data
+  data.chars.chunk { |c| c }.inject("") { |memo, (c, a)| memo << "#{a.length}#{c}" }
+end
