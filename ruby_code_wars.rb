@@ -579,3 +579,16 @@ def count_me(data)
   return "" unless /^\d+$/ === data
   data.chars.chunk { |c| c }.inject("") { |memo, (c, a)| memo << "#{a.length}#{c}" }
 end
+
+
+# 56  find the maximum difference in length between 2 strings in 2 different arrays
+def mxdiflg(a1, a2)
+	a1.empty? || a2.empty? ? -1 : a2.max_by(&:length).length - a1.min_by(&:length).length
+end
+
+def mxdiflg(a1, a2)
+  a1 = a1.map(&:size)
+  a2 = a2.map(&:size)
+
+  [a1.max - a2.min, a1.min - a2.max].map(&:abs).max rescue -1
+end
