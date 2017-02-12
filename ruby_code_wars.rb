@@ -600,3 +600,14 @@ def approx_root(n)
   highsq = (base + 1) ** 2
   (base + (n - lowsq) / (highsq - lowsq).to_f).round(2)
 end
+
+# 58   calculate tips, r == quality of service ( 1 , 0 , -1)
+def calc_tip(p, r)
+  t = (p.to_f / 10).round.to_i
+
+  t = t+1 if r == 1
+  t = t-1 if r == 0
+  t = t / 2 - 1 if r == -1
+
+  [0, t].max
+end
