@@ -611,3 +611,8 @@ def calc_tip(p, r)
 
   [0, t].max
 end
+
+# 59 find min and max integers from a string of numbers
+def high_and_low(numbers)
+  "#{numbers.split(' ').map(&:to_i).max} #{numbers.split(' ').map(&:to_i).min}"
+end
