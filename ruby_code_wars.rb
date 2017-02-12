@@ -546,4 +546,8 @@ def count_char(string, char)
   string.scan(/#{char}/i).size
 end
 
+# 54 find and print aspect ratio of any give two numbers
+def calculate_ratio(w,h)
+  a = w / h.to_f.rationalize(0.01)
+  a.to_s.length > 3 && a.to_s.length < 5 ? "#{a.to_s.split('')[0]}#{a.to_s.split('')[1]}:#{a.to_s.split('')[03]}#{a.to_s.split('')[4]}" : "#{a.to_s.split('')[0]}:#{a.to_s.split('')[2]}"
 end
