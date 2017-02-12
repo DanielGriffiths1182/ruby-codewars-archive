@@ -592,3 +592,11 @@ def mxdiflg(a1, a2)
 
   [a1.max - a2.min, a1.min - a2.max].map(&:abs).max rescue -1
 end
+
+# 57 Finding approximate square roots. I couldnt figure out how to deal with rounding to different degrees per test.
+def approx_root(n)
+  base = Math.sqrt(n).floor
+  lowsq = base ** 2
+  highsq = (base + 1) ** 2
+  (base + (n - lowsq) / (highsq - lowsq).to_f).round(2)
+end
