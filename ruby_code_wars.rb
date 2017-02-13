@@ -630,3 +630,7 @@ end
 def duplicate_count(text)
   text.each_char.group_by(&:itself).count{|_, v| v.length > 1}
 end
+
+def duplicate_count(text)
+  ('a'..'z').count { |c| text.downcase.count(c) > 1 }
+end
