@@ -634,3 +634,8 @@ end
 def duplicate_count(text)
   ('a'..'z').count { |c| text.downcase.count(c) > 1 }
 end
+
+#62 round numbers in array to the nearst multiple of 5
+def round_to_five(numbers)
+ numbers.map{|number| (number/5.0).round * 5}
+end
