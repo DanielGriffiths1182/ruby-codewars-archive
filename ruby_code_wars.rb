@@ -616,3 +616,12 @@ end
 def high_and_low(numbers)
   "#{numbers.split(' ').map(&:to_i).max} #{numbers.split(' ').map(&:to_i).min}"
 end
+
+def high_and_low(numbers)
+  numbers.split.map(&:to_i).minmax.reverse.join(' ')
+end
+
+# 60   extract numbers from a string and find the sum
+def sum_from_string(str)
+  str.gsub(/[^0-9]/, ' ').split(' ').map(&:to_i).inject(0, :+)
+end
