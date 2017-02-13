@@ -625,3 +625,8 @@ end
 def sum_from_string(str)
   str.gsub(/[^0-9]/, ' ').split(' ').map(&:to_i).inject(0, :+)
 end
+
+# 61 count duplicate characters in string
+def duplicate_count(text)
+  text.each_char.group_by(&:itself).count{|_, v| v.length > 1}
+end
