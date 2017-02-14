@@ -1,15 +1,15 @@
-#1  take out vowels from string
+#1  Remove vowels from string
 def disemvowel(str)
   result = str.delete 'aeiouAEIOU'
   return result
 end
 
-#2  shortest string in array
+#2  Shortest string in array
 def find_short(s)
   s.split.map(&:size).min
 end
 
-#3   breaking chocalte pieces algorithm
+#3   Breaking chocalate pieces algorithm, how many times do you have to break the "chocalate bar"
 def break_chocolate(n, m)
   b = (n * m) - 1
   if b < 0
@@ -19,13 +19,13 @@ def break_chocolate(n, m)
   end
 end
 
-#4    return integers in descending order
+#4   Return integers in descending order
 def descending_order(n)
   n.to_s.chars.sort.reverse.join.to_i
 end
 
 
-#5    Write a function, persistence, that takes in a positive parameter num and returns
+#5   Write a function, persistence, that takes in a positive parameter num and returns
 #its multiplicative persistence, which is the number of times you must multiply the
 #digits in num until you reach a single digit.
 def persistence(n)
@@ -38,18 +38,18 @@ def persistence(n)
   a
 end
 
-#6    sum of the two smallest numbers in array
+#6   Sum of the two smallest numbers in array
 def sum_two_smallest_numbers(numbers)
   numbers.sort!
   return numbers[1] + numbers[0]
 end
 
-#7    reject all array names that dont have the length of four, whom are your friends
+#7   Reject all array strings (names) that dont have the length of four, whom are your friends
 def friend(friends)
    friends.reject { |a| a.length != 4 }
 end
 
-#8     determines a prime number
+#8   Determines a prime number
 def isPrime(num)
   if num < 2
     return false
@@ -62,12 +62,12 @@ def isPrime(num)
   return true
 end
 
-#9    return an array of all divisors execpt for 1 and n
+#9   Return an array of all divisors execpt for 1 and n
 def divisors(n)
   (2..n - 1).collect { |x| [x] if ((n/x) * x) == n}.compact.flatten
 end
 
-#10    return sum of a multiples of 3 and 5 up to (number)
+#10   Return sum, of multiples of 3 and 5 up to (number)
 def solution(number)
   array = Array.new
   for x in 1..number - 1
@@ -79,7 +79,7 @@ def solution(number)
 end
 
 
-#11    Write a function that will find all the anagrams of a word from a list.
+#11   Write a function that will find all the anagrams of a word from a list.
 #You will be given two inputs a word and an array with words. You should
 #return an array of all the anagrams or an empty array if there are none.
 def anagrams(word, words)
@@ -87,7 +87,7 @@ def anagrams(word, words)
 end
 
 
-#12    (), ({}) is right, (} is wrong
+#12   (), ({}) is correct, (} is incorrect
 def group_check s
   loop do
     return true if s.empty?
@@ -97,7 +97,7 @@ def group_check s
   end
 end
 
-#13    determines even or odd
+#13   Determines even or odd
 def even_or_odd(number)
   if number % 2 == 0
     return "Even"
@@ -115,12 +115,12 @@ def even_or_odd(number)
 end
 
 
-#14    count the number of times they hoola hoop, return string accordingly
+#14   Count the number of times they hoola hoop, return string accordingly
 def hoop_count n
 	(n < 10) ? "Keep at it until you get it" : "Great, now move on to tricks"
 end
 
-#15    finding the new value in an array when provided the average that needs to be attaind
+#15   Finding the new value in an array of integers, when provided the average of integers that needs to be attained
 def new_avg(arr, newavg)
     if (arr == []) then sm = 0  else sm = arr.inject{ |sum,x| sum + x } end
     add = (arr.length + 1) * newavg - sm
@@ -130,7 +130,7 @@ def new_avg(arr, newavg)
     raise ArgumentError, "Expected New Average is too low"
 end
 
-# 16    return a list of integers 1..n
+# 16   return a list of integers 1..n
 def pre_fizz(n)
   x = Array.new
   for a in 1..n
@@ -158,13 +158,13 @@ def reverse(string)
   return string.split.reverse.join(' ')
 end
 
-#18   with these arguments integer integer and operator, make it run... (.send is cool, just learned it)
+#18   With these arguments integer integer and operator, make it run... (.send is cool, just learned it)
 def basic_op(operator, value1, value2)
   return value1.send(operator, value2)
 end
 
 
-#19    in string if < 5 turn to 0, 5 and up turn to 1
+#19   If string is < 5 turn to 0. 5 and up, turn to 1
 def fake_bin(s)
   s.chars.map { |s| s < "5" ? "0" : "1" }.join
 end
@@ -177,13 +177,13 @@ def fake_bin(str)
   str.split('').map{ |x| x.to_i < 5 ? 0 : 1 }.join
 end
 
-#20    how many bottles do you have to buy to make the discount worth it for the holiday
+#20   How many bottles do you have to buy to make the discount worth it for the holiday
 def duty_free(price, discount, holiday_cost)
    total = holiday_cost / (price * (discount / 100.to_f))
    return total.to_i
 end
 
-#21    picking flower petals, how much does she love you, she loves you not, etc...
+#21   Picking flower petals, how much does she love you, she loves you not, etc...
 def how_much_i_love_you(nb_petals)
   how_much = {
     1 => "some",
@@ -213,23 +213,23 @@ def remove(s)
 s.chomp('!')
 end
 
-#23    count positive numbers, sum negative number in array, and return [0][1] back
+#23   Count positive numbers, sum negative numbers in array, and return [0][1] back
 def count_positives_sum_negatives(lst)
   positives, negatives = lst.partition(&:positive?)
   [ positives.length, negatives.inject(0, &:+) ]
 end
 
-#24 replace all vowels with '!'
+#24   Replace all vowels with '!'
 def replace(s)
   s.gsub(/[aeiouAEIOU]/, '!')
 end
 
-#25    get volume of a cube
+#25   Get volume of a cube
 def get_volume_of_cuboid(length, width, height)
   return length * width * height
 end
 
-#26  remove smallest and largest values from array and get the sum of whats left, clumsy first try
+#26   Remove smallest and largest values from array and get the sum of whats left, clumsy first try
 def sum_array(arr)
   if arr == [] || arr == nil
     return 0
@@ -250,7 +250,7 @@ def sum_array(arr)
   end
 end
 
-#27    special answer for a special someone
+#27   Special answer for a special someone
 def greet(name)
   if name == "Johnny"
     return "Hello, my love!"
@@ -259,17 +259,17 @@ def greet(name)
   end
 end
 
-#28   celsius to romer formula
+#28   Celsius to romer formula
 def celsius_to_romer(temp)
  return temp * 21/40.to_f + 7.5
 end
 
-#29    approx_root sqrt
+#29   Approx_root sqrt
 def approx_root(n)
   Math.sqrt(n).round(2)
 end
 
-#30  take 2 strings and remove non unique characters, then sort the new string alphabetically
+#30   Take 2 strings and remove non unique characters, then sort the new string alphabetically
 def longest(a1, a2)
   b = a1 + a2
   target = Array.new
@@ -281,8 +281,8 @@ def longest(a, b)
   (a+b).chars.uniq.sort.join
 end
 
-#(((Issue with test cases being incongruent with description, I noted on codewars)))
-#31   return first half of the letters of a string, but improved a little because of test case Issue
+#    (((Issue with test cases being incongruent with description, I noted on codewars)))
+#31   Return first half of the letters of a string, but improved a little because of test case issue
 def testit(s)
   a = s.length / 2
   if s.length <= 1
@@ -295,7 +295,7 @@ def testit(s)
 end
 
 
-#32    Return sum of positive integers in array, 0 if empty
+#32   Return sum of positive integers in array, 0 if empty
 def positive_sum(arr)
   arr.delete_if { |x| x < 0 }
   arr.empty? ? 0 : arr.inject(:+)
@@ -305,17 +305,17 @@ def positive_sum(arr)
   arr.select{|x| x > 0}.reduce(0, :+)
 end
 
-#33    take a number and seperate the digits, push into an array, in reversed order
+#33   Take a number and seperate the digits, push into an array, in reversed order
 def digitize(n)
   n.to_s.chars.reverse.map(&:to_i)
 end
 
-#34    change a negative integer to its ABS, change positive integer to negative
+#34   Change a negative integer to its ABS, change positive integer to negative
 def opposite(n)
  n <= 0 ? n.abs : -n
 end
 
-#35   create a string representing a dollar amount from an integer or float
+#35   Create a string representing a dollar amount from an integer or float
 def format_money(amount)
   a = sprintf '%.2f', amount
   "$" + a
@@ -326,7 +326,7 @@ def format_money(amount)
 end
 
 
-#36   find minimum and maximum values in a list
+#36   Find minimum and maximum values in a list
 def min(list)
   list.sort[0]
 end
@@ -335,12 +335,12 @@ def max(list)
   list.sort[-1]
 end
 
-#37  find (nth) digit of a number
+#37  Find (nth) digit of a number
 def find_digit(num, nth)
   nth <= 0 ? -1 : num.to_s.split('')[-nth].to_i
 end
 
-#38    average of an array of integers, returned as whole number
+#38   Average of an array of integers, returned as whole number
 def get_average(marks)
   average = marks.inject{ |sum, el| sum + el }.to_f / marks.size
   average.to_i
@@ -350,7 +350,7 @@ def get_average(marks)
   marks.inject(:+) / marks.length
 end
 
-#39 concat arrays, sorted and unique values
+#39   Concat arrays, sorted and unique values
 def merge_arrays(a, b)
   (a | b).sort
 end
@@ -360,12 +360,12 @@ def merge_arrays(a, b)
   c.sort.uniq
 end
 
-#40    remove all odd numbers from array
+#40   Remove all odd numbers from array
 def remove_odd_numbers_from_array(a)
   a.reject(&:odd?)
 end
 
-#41 delete every other element in array
+#41   Delete every other element in array
 def remove_every_other(arr)
   b = Array.new
   arr.map.with_index{|v,i| i % 2 == 0 ? b << v : v }
@@ -376,7 +376,7 @@ def remove_every_other(arr)
   arr.select.with_index { |_,idx| idx.even? }
 end
 
-#42    make sure the watermelon can be devided so that each (2) people can have an even number of pieces
+#42    Make sure the watermelon can be devided so that each (2) people can have an even number of pieces
 def divide(weigth)
   weigth % 2 == 0 && weigth > 2 ? true : false
 end
@@ -385,7 +385,7 @@ def divide(weight)
   weight > 2 && weight.even?
 end
 
-#43   fix the operation so that it accurately calculates division
+#43   Fix the operation so that it accurately calculates division
 def divide_numbers x, y
   x / y.to_f
 end
@@ -395,22 +395,22 @@ def divide_numbers x, y
 end
 
 
-# 44 multiple (n) by 5-raised to the power of the number of digits in n
+# 44   Multiply (n) by 5-raised to the power of the number of digits in (n)
 def multiply(n)
   n < 0 ? n * 5 ** (n.to_s.length - 1) : n * 5 ** n.to_s.length
 end
 
-#45    round down with .floor
+#45   Round down with .floor
 def litres(time)
   time.floor / 2
 end
 
-#46   remove first and last element of an array
+#46   Remove first and last element of an array
 def remove_char(s)
   s.slice(1..-2)
 end
 
-#47    remove the first character from string
+#47    Remove the first character from string
 def get_age(age)
   age.split('').slice(0).to_i
 end
@@ -419,13 +419,13 @@ def get_age(a)
   a[0].to_i
 end
 
-#47 Using MathPI
+#47  Using MathPI
 def annulus_area(r)
   (Math::PI * (r / 2.0) ** 2).round(2)
 end
 
 
-# 48    Given two points P and Q, output the symmetric point of
+# 48   Given two points P and Q, output the symmetric point of
 # point P about Q. Each argument is a two-element array of integers
 # representing the point's X and Y coordinates. Output should be in
 # the same format, giving the X and Y coordinates of point P1. You do
@@ -473,7 +473,7 @@ def is_prime(n)
 end
 
 
-#50   Find the average between each index of array
+#50   Find the average between each index (integer) of array
 def averages(arr)
   if arr == nil || arr.size <= 1
     return []
@@ -489,7 +489,7 @@ def averages(arr)
   end
 end
 
-#51 Find the Barycenter of a triangle
+#51  Find the Barycenter of a triangle
 def bar_triang(p1,p2,p3)
   barycenter = Array.new
   topx = p1[0] + p2[0] + p3[0]
@@ -507,7 +507,7 @@ def bar_triang(p1,p2,p3)
   [x.round(4),y.round(4)]
 end
 
-#52 find lowest integer that doesnt belong to array, greater than 0
+#52  Find lowest integer that doesnt belong to array, greater than 0
 def next_id(arr)
   x = 0
   while x <= arr.max + 1 do
@@ -537,7 +537,7 @@ def next_id(arr)
   end
   a
 
-#53  find the number of times a character is repeated (char) in string (string)
+#53  Find the number of times a character is repeated (char) in string (string)
 def count_char(string, char)
   string.downcase.chars.count(char.downcase)
 end
@@ -546,14 +546,14 @@ def count_char(string, char)
   string.scan(/#{char}/i).size
 end
 
-# 54 find and print aspect ratio of any give two numbers
+# 54  Find and print aspect ratio of any give two numbers
 def calculate_ratio(w,h)
   a = w / h.to_f.rationalize(0.01)
   a.to_s.length > 3 && a.to_s.length < 5 ? "#{a.to_s.split('')[0]}#{a.to_s.split('')[1]}:#{a.to_s.split('')[03]}#{a.to_s.split('')[4]}" : "#{a.to_s.split('')[0]}:#{a.to_s.split('')[2]}"
 end
 
 
-#55 Given a string of integers, count how many times that
+#55   Given a string of integers, count how many times that
 #   integer repeats itself, then return a string showing the count and the integer.
 #   countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)
 def count_me(data)
@@ -581,7 +581,7 @@ def count_me(data)
 end
 
 
-# 56  find the maximum difference in length between 2 strings in 2 different arrays
+# 56  Find the maximum difference in length between 2 strings in 2 different arrays
 def mxdiflg(a1, a2)
 	a1.empty? || a2.empty? ? -1 : a2.max_by(&:length).length - a1.min_by(&:length).length
 end
@@ -593,7 +593,8 @@ def mxdiflg(a1, a2)
   [a1.max - a2.min, a1.min - a2.max].map(&:abs).max rescue -1
 end
 
-# 57 Finding approximate square roots. I couldnt figure out how to deal with rounding to different degrees per test.
+# 57   Finding approximate square roots.
+#     I couldnt figure out how to deal with rounding to different degrees per test.
 def approx_root(n)
   base = Math.sqrt(n).floor
   lowsq = base ** 2
@@ -601,7 +602,7 @@ def approx_root(n)
   (base + (n - lowsq) / (highsq - lowsq).to_f).round(2)
 end
 
-# 58   calculate tips, r == quality of service ( 1 , 0 , -1)
+# 58   Calculate tips, r == three grades of quality of service ( 1 , 0 , -1)
 def calc_tip(p, r)
   t = (p.to_f / 10).round.to_i
 
@@ -612,7 +613,7 @@ def calc_tip(p, r)
   [0, t].max
 end
 
-# 59 find min and max integers from a string of numbers
+# 59  Find min and max integers from a string of numbers
 def high_and_low(numbers)
   "#{numbers.split(' ').map(&:to_i).max} #{numbers.split(' ').map(&:to_i).min}"
 end
@@ -621,12 +622,12 @@ def high_and_low(numbers)
   numbers.split.map(&:to_i).minmax.reverse.join(' ')
 end
 
-# 60   extract numbers from a string and find the sum
+# 60   Extract numbers from a string and find the sum
 def sum_from_string(str)
   str.gsub(/[^0-9]/, ' ').split(' ').map(&:to_i).inject(0, :+)
 end
 
-# 61 count duplicate characters in string
+# 61   Count duplicate characters in string
 def duplicate_count(text)
   text.each_char.group_by(&:itself).count{|_, v| v.length > 1}
 end
@@ -635,7 +636,7 @@ def duplicate_count(text)
   ('a'..'z').count { |c| text.downcase.count(c) > 1 }
 end
 
-#62 round numbers in array to the nearst multiple of 5
+#62   Round numbers in array to the nearst multiple of 5
 def round_to_five(numbers)
  numbers.map{|number| (number/5.0).round * 5}
 end
