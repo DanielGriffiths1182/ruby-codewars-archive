@@ -1,5 +1,5 @@
 CodeWars Review
 
-Archive of CodeWars exercises completed, language - Ruby
+Archive of completed CodeWars exercises, language - Ruby
 
-Short description and number in chronological order. 
+Short description and number in chronological order.
