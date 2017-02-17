@@ -94,23 +94,23 @@ Test.assert_equals(remove("Hi") , "Hi")
 
 39 Concat arrays, return sorted and unique values
 
-40 Remove all odd numbers from array
+40 Remove all odd numbers from object (array)
 
-41 Delete every other element in array
+41 Delete every other element in object (array)
 
-42 Make sure the watermelon can be devided so that each (2) people can have an even number of pieces
+42 Make sure the 'watermelon' can be divided so that each (2) people can have an even number of pieces, return
 
-43 Fix the operation so that it accurately calculates division
+43 Fix the operation so that it accurately calculates division, run function
 
-44 Multiply (n) by 5-raised to the power of the number of digits in (n)
+44 Multiply (n) by 5-raised to the power of the number of digits in (n), return integer
 
-45 Round down with .floor
+45 Round down object (integer) with .floor
 
-46 Remove first and last element of an array
+46 Remove first and last element of an object (array)
 
-47 Remove the first character from string#
+47 Remove the first character from object (string)
 
-47 Using MathPI
+47 Using MathPI, find circumference of a circle given parameters
 
 48 Given two points P and Q, output the symmetric point of
 point P about Q. Each argument is a two-element array of integers
@@ -118,35 +118,35 @@ representing the point's X and Y coordinates. Output should be in
 the same format, giving the X and Y coordinates of point P1. You do
 not have to validate the input.
 
-49 So this function should return the first pair of two prime numbers
+49 This function should return the first pair of two prime numbers
 spaced with a gap of g between the limits m, n if these numbers exist otherwise
 nil or null or None or Nothing (depending on the language). In C++ return in such a case {0, 0}.
 
-50 Find the average between each index (integer) of array
+50 Find the average between each index (integer) of object (array)
 
-51 Find the Barycenter of a triangle
+51 Return the Barycenter of a triangle
 
-52 Find lowest integer that doesnt belong to array, greater than 0
+52 Find lowest integer that doesn't belong to object (array), greater than 0
 
-53 Find the number of times a character is repeated (char) in string (string)
+53 Find the number of times a character is repeated (char) in object (string)
 
-54 Find and print aspect ratio of any give two numbers
+54 Find and print aspect ratio of any give two objects (integers)
 
 55 Given a string of integers, count how many times that
 integer repeats itself, then return a string showing the count and the integer.
 countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)
 
-56 Find the maximum difference in length between 2 strings in 2 different arrays
+56 Find the maximum difference in length between 2 objets (strings) in 2 different (arrays)
 
 57 Finding approximate square roots.
-I couldnt figure out how to deal with rounding to different degrees per test.
+I couldn't figure out how to deal with rounding to different degrees per test.
 
-58 Calculate tips, r == three grades of quality of service ( 1 , 0 , -1)
+58 Calculate tips, object (r == three grades of quality of service ( 1 , 0 , -1)) and 20% tip as object
 
-59 Find min and max integers from a string of numbers
+59 Find min and max integers from a object (string) of integers
 
-60 Extract numbers from a string and find the sum
+60 Extract numbers from a object (string) and return the sum
 
-61 Count duplicate characters in string
+61 Count duplicate characters in object (string)
 
-62 Round numbers in array to the nearst multiple of 5
+62 Round numbers in object (array) to the nearest multiple of 5
