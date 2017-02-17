@@ -34,20 +34,19 @@ return an array of all the anagrams or an empty array if there are none.
 
 13 Write an algorithm that determines even or odd from a give object (integer)
 
-14 Count the number of times they hoola hoop, return string accordingly
+14 Count the number of times object (array) "hoola hoops", return concatenated string with answer
 
-15 Finding the new value in an array of integers, when provided the average of integers that needs to be attained
+15 Finding the next integer value for an array of integers when provided the average that needs to be attained by adding the next integer
 
-16 return a list of integers 1..n
+16 Return a list of integers 1..n where (n) is given
 
-17 Reverse words in a string (forgot split creates an array, was making nested arrays prior
-to solution)
+17 Reverse words in a string and return a string (forgot split creates an array, was making nested arrays on accident)
 
-18 With these arguments integer integer and operator, make it run... (.send is cool, just learned it)
+18 Provided these arguments integer integer and operator, which each have parameters, make it run... (.send is cool, just learned it)
 
-19 If string is < 5 turn to 0. 5 and up, turn to 1
+19 If object (string) is < 5 (integer) turn to 0. if object (string) > 5 and up, turn to 1
 
-20 How many bottles do you have to buy to make the discount worth it for the holiday
+20 How many 'bottles' do you have to buy to make the 'discount' worth it for the 'holiday'
 
 21 Picking flower petals, how much does she love you, she loves you not, etc...
 
@@ -60,40 +59,40 @@ Test.assert_equals(remove("!Hi!") , "!Hi")
 Test.assert_equals(remove("Hi! Hi!") , "Hi! Hi")
 Test.assert_equals(remove("Hi") , "Hi")
 
-23 Count positive numbers, sum negative numbers in array, and return [0][1] back
+23 Count positive numbers and sum negative numbers in object (array), and return [0][1]
 
-24 Replace all vowels with '!'
+24 Replace all vowels in object (string) with '!'
 
-25 Get volume of a cube
+25 Return volume of a cube
 
-26 Remove smallest and largest values from array and get the sum of whats left, clumsy first try
+26 Remove smallest and largest values from object (array) and return the sum of whats left, clumsy first try
 
-27 Special answer for a special someone
+27 Special answer for a special someone, concatenated string
 
-28 Celsius to romer formula
+28 Return Celsius to Romer formula
 
-29 Approx_root sqrt
+29 Return sqrt of object (integer)
 
-30 Take 2 strings and remove non unique characters, then sort the new string alphabetically
+30 Take 2 strings and remove the non unique characters, then sort the new string alphabetically and return
 
 (((Issue with test cases being incongruent with description, I noted on codewars)))
-31 Return first half of the letters of a string, but improved a little because of test case issue
+31 Return first half of the letters of an object (string), but improved a little because of test case issue
 
-32 Return sum of positive integers in array, 0 if empty
+32 Return sum of positive integers in object (array), return 0 if empty
 
-33 Take a number and seperate the digits, push into an array, in reversed order
+33 Take a object (integer) and separate the digits, push into an array, in reversed order, return
 
-34 Change a negative integer to its ABS, change positive integer to negative
+34 Change a negative object (integer) to its ABS, change positive integer to negative and return
 
-35 Create a string representing a dollar amount from an integer or float
+35 Create a string representing a dollar amount from an object (integer or float)
 
-36 Find minimum and maximum values in a list
+36 Find minimum and maximum values in an object (array)
 
-37 Find (nth) digit of a number
+37 Return (nth) digit of an object (object)
 
-38 Average of an array of integers, returned as whole number
+38 Average of an object (array) of integers, returned as whole number
 
-39 Concat arrays, sorted and unique values
+39 Concat arrays, return sorted and unique values
 
 40 Remove all odd numbers from array
 
