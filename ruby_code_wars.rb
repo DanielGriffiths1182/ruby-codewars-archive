@@ -640,3 +640,28 @@ end
 def round_to_five(numbers)
  numbers.map{|number| (number/5.0).round * 5}
 end
+
+
+#63  Reverse and invert integers in array, throw out all other elements
+def reverse_invert(array)
+  i = 0
+  ints = []
+  while i < array.count
+    ints << array[i] if array[i].is_a? Integer
+    i += 1
+  end
+
+  ints = ints.map do |x|
+    if x.to_s.length > 1 && x < 0
+      x.to_s.reverse.to_i
+    elsif x.to_s.length > 1 && x > 0
+      x.to_s.reverse.to_i * -1
+    else
+      x * -1
+    end
+  end 
+end
+
+def reverse_invert array
+  array.select{|n|n.is_a? Integer }.map{|i| (-i).to_s.sub(/\d+/,&:reverse).to_i }
+end

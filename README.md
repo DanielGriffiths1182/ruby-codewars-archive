@@ -150,3 +150,11 @@ I couldn't figure out how to deal with rounding to different degrees per test.
 61 Count duplicate characters in object (string)
 
 62 Round numbers in object (array) to the nearest multiple of 5
+
+63 Reverse and invert all integer values in a given list.
+
+Python:
+
+reverse_invert([1,12,'a',3.4,87,99.9,-42,50,5.6]) = [-1,-21,-78,24,-5]
+
+Ignore all other types than integer.
