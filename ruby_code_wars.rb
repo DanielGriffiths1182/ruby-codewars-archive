@@ -709,9 +709,39 @@ def productFib(prod)
 end
 
 #66 Create function that takes one positive three digit integer and rearanges its
-#digits to get maximum possible number. Assume that argument is integer. Return null 
+#digits to get maximum possible number. Assume that argument is integer. Return null
 #(nil for ruby) if argument is not valid.
 def max_redigit(num)
   return nil if num.to_s.length != 3
   num.to_s.chars.sort.reverse.join.to_i
+end
+
+#67You have to search all numbers from inclusive 1 to inclusive a given number x,
+#that have the given digit d in it.
+# The value of d will always be 0 - 9.
+# The value of x will always be greater than 0.
+#
+# You have to return as an array
+#
+# the count of these numbers,
+#
+# their sum
+#
+# and their product.
+def numbers_with_digit_inside(x, d)
+  d = d.to_s
+  vals = []
+  (1..x).each do |i|
+    vals << i if i.to_s.include?(d)
+  end
+  return [0,0,0] unless vals.size > 0
+  [vals.size,
+   vals.inject(0) { |s,v| s += v },
+   vals.inject(1) { |p,v| p *= v }
+  ]
+end
+
+def numbers_with_digit_inside(x, d)
+  nums = ('1'..x.to_s).select { |num| num.include?(d.to_s) }.map(&:to_i)
+  [nums.size, nums.reduce(0, :+), nums.reduce(:*) || 0]
 end

@@ -197,3 +197,18 @@ F(m) being the smallest one such as F(m) * F(m+1) > prod.
 
 
 66 Create function that takes one positive three digit integer and rearranges its digits to get maximum possible number. Assume that argument is integer. Return null (nil for ruby) if argument is not valid.
+
+
+
+67 You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
+The value of d will always be 0 - 9.
+The value of x will always be greater than 0.
+
+You have to return as an array
+
+the count of these numbers, their sum, and their product.
+
+x = 11
+d = 1
+Numbers: 1, 10, 11
+Return: [3, 22, 110]
