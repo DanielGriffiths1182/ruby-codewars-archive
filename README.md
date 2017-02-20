@@ -151,13 +151,17 @@ I couldn't figure out how to deal with rounding to different degrees per test.
 
 62 Round numbers in object (array) to the nearest multiple of 5
 
+
+
 63 Reverse and invert all integer values in a given list.
 
 Python:
 
-reverse_invert([1,12,'a',3.4,87,99.9,-42,50,5.6]) = [-1,-21,-78,24,-5]
+reverse_invert([1 , 12 , 'a' , 3.4 , 87 , 99.9 , -42 , 50 , 5.6]) = [-1 , -21 , -78 , 24 , -5]
 
 Ignore all other types than integer.
+
+
 
 64 To square(root) or not to square(root)
 
@@ -166,7 +170,7 @@ Return a new array with processing every number of the input-array like this:
 
 If the number has an integer square root, take this, otherwise square the number.
 
-[4,3,9,7,2,1] -> [2,9,3,49,4,1]
+[ 4 , 3 , 9 , 7 , 2 , 1 ] -> [ 2 , 9 , 3 , 49 , 4 , 1 ]
 The input array will always contain only positive numbers and will never be empty or null.
 
 The input array should not be modified!
@@ -174,3 +178,18 @@ The input array should not be modified!
 Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have created other katas. Have a look if you like coding and challenges.
+
+
+
+65  Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
+
+F(n) * F(n+1) = prod.
+Your function productFib takes an integer (prod) and returns an array:
+
+[F(n), F(n+1), true]
+depending on the language if F(n) * F(n+1) = prod.
+
+If you don't find two consecutive F(m) verifying F(m) * F(m+1) = prodyou will return
+
+[F(m), F(m+1), false]
+F(m) being the smallest one such as F(m) * F(m+1) > prod.

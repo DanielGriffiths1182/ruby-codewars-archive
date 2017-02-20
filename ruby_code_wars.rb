@@ -685,3 +685,25 @@ def square_or_square_root(arr)
     sqrt % 1 == 0 ? sqrt : n**2
   end
 end
+
+#65 Determines whether object (prod) is the product of two consecutive Fibonacci numbers, returns array
+# containing the two numbers that are == (prod) or first that are >= (prod),
+# as well as (true) or (false) in arr[2] - And refactored alternate solution
+def productFib(prod)
+  new = []
+  arr = [0 ,1]
+  while arr[-1] * arr[-2] < prod
+    arr << arr[-1] + arr[-2]
+  end
+  new << arr[-2]
+  new << arr[-1]
+  arr[-1] * arr[-2] == prod ? new << true : new << false
+end
+
+def productFib(prod)
+  a, b = [0, 1]
+  while prod > a * b
+    a, b = [b, a + b]
+  end
+  [a, b, prod == a * b]
+end
