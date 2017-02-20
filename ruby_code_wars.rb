@@ -659,9 +659,29 @@ def reverse_invert(array)
     else
       x * -1
     end
-  end 
+  end
 end
 
 def reverse_invert array
   array.select{|n|n.is_a? Integer }.map{|i| (-i).to_s.sub(/\d+/,&:reverse).to_i }
+end
+
+#64  If the number has an integer square root, take this, otherwise square the number. / Alternate Solutions
+def square_or_square_root(arr)
+  new_arr = Array.new
+  arr.each do |i|
+    Math.sqrt(i) % 1 == 0 ? new_arr << Math.sqrt(i).to_i : new_arr << i ** 2
+  end
+  new_arr
+end
+
+def square_or_square_root(arr)
+  arr.map { |number| Math.sqrt(number) % 1 == 0 ? Math.sqrt(number) : number ** 2}
+end
+
+def square_or_square_root(arr)
+  arr.map do |n|
+    sqrt = Math.sqrt(n)
+    sqrt % 1 == 0 ? sqrt : n**2
+  end
 end
