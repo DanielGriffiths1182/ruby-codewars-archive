@@ -707,3 +707,11 @@ def productFib(prod)
   end
   [a, b, prod == a * b]
 end
+
+#66 Create function that takes one positive three digit integer and rearanges its
+#digits to get maximum possible number. Assume that argument is integer. Return null 
+#(nil for ruby) if argument is not valid.
+def max_redigit(num)
+  return nil if num.to_s.length != 3
+  num.to_s.chars.sort.reverse.join.to_i
+end

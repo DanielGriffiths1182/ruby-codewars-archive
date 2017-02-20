@@ -189,7 +189,11 @@ Your function productFib takes an integer (prod) and returns an array:
 [F(n), F(n+1), true]
 depending on the language if F(n) * F(n+1) = prod.
 
-If you don't find two consecutive F(m) verifying F(m) * F(m+1) = prodyou will return
+If you don't find two consecutive F(m) verifying F(m) * F(m+1) = prod you will return
 
 [F(m), F(m+1), false]
 F(m) being the smallest one such as F(m) * F(m+1) > prod.
+
+
+
+66 Create function that takes one positive three digit integer and rearranges its digits to get maximum possible number. Assume that argument is integer. Return null (nil for ruby) if argument is not valid.
