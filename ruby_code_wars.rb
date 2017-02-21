@@ -751,3 +751,14 @@ end
 def get_number_from_string(s)
   s.scan(/\d/).join('').to_i
 end
+
+#69 Given a string containing a list of integers separated by commas,
+#   write the function string_to_int_list(s) that takes said string and returns
+#   a new list containing all integers present in the string, preserving the order.
+def string_to_int_list(s)
+  s.split(',').map { |i| i == '' ? nil : i.to_i }.compact
+end
+
+def string_to_int_list(s)
+  s.scan(/-?\d+/).map(&:to_i)
+end

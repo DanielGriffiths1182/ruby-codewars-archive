@@ -216,3 +216,7 @@ Return: [3, 22, 110]
 
 
 68 Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
+
+
+
+69 Given a string containing a list of integers separated by commas, write the function string_to_int_list(s) that takes said string and returns a new list containing all integers present in the string, preserving the order.
