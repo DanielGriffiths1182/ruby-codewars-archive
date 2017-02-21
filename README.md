@@ -212,3 +212,7 @@ x = 11
 d = 1
 Numbers: 1, 10, 11
 Return: [3, 22, 110]
+
+
+
+68 Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56

@@ -745,3 +745,9 @@ def numbers_with_digit_inside(x, d)
   nums = ('1'..x.to_s).select { |num| num.include?(d.to_s) }.map(&:to_i)
   [nums.size, nums.reduce(0, :+), nums.reduce(:*) || 0]
 end
+
+#68 Write a function which removes from string all non-digit
+#   characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
+def get_number_from_string(s)
+  s.scan(/\d/).join('').to_i
+end
