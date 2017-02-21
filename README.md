@@ -220,3 +220,7 @@ Return: [3, 22, 110]
 
 
 69 Given a string containing a list of integers separated by commas, write the function string_to_int_list(s) that takes said string and returns a new list containing all integers present in the string, preserving the order.
+
+
+
+70 Find the last element of a list.

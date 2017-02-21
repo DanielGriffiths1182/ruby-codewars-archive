@@ -762,3 +762,8 @@ end
 def string_to_int_list(s)
   s.scan(/-?\d+/).map(&:to_i)
 end
+
+#70 Find the last element of a list.
+def last(*args)
+  args[-1].is_a?(Integer) ? args.flatten[-1] : args[-1][-1]
+end
