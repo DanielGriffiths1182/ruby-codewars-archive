@@ -767,3 +767,10 @@ end
 def last(*args)
   args[-1].is_a?(Integer) ? args.flatten[-1] : args[-1][-1]
 end
+
+# 71 A palindrome is a word, phrase, number, or other sequence of characters
+# which reads the same backward or forward. Allowances may be made for adjustments to
+# capital letters, punctuation, and word dividers.
+def is_palindrome(str)
+  str.to_s == str.to_s.reverse ? true : false
+end
