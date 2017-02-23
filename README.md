@@ -241,3 +241,7 @@ Then you will take the string from the 2nd position and reverse it again: 504321
 Then you will take the string from the 3rd position and reverse it again: 504123
 
 Continue this pattern until you have done every single position, and then you will return the string you have created. For this particular number, you would return: 504132
+
+
+
+73 We need a function that can transform a string into a number. (Thought I'd knock this out for some easy points)
