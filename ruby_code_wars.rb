@@ -774,3 +774,12 @@ end
 def is_palindrome(str)
   str.to_s == str.to_s.reverse ? true : false
 end
+
+# 72 You are going to be given a string. 
+# Your job is to return that string in a certain order that I will explain in  (README DESCRIPTION):
+def reverse_fun(string)
+  reversed = ''
+  str = string.chars
+  string.length.times { reversed.concat str.reverse!.delete_at 0 }
+  reversed
+end
