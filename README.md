@@ -1,8 +1,8 @@
-CodeWars Review
+#CodeWars Review
 
-Archive of completed CodeWars exercises, language - Ruby
+**Archive of completed CodeWars exercises, language - Ruby**
 
-Short description and number in chronological order.
+*Short description and number in chronological order.*
 
 - 1 Remove vowels from object (string)
 
