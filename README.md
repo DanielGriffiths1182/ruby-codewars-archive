@@ -4,53 +4,53 @@ Archive of completed CodeWars exercises, language - Ruby
 
 Short description and number in chronological order.
 
-1 Remove vowels from object (string)
+- 1 Remove vowels from object (string)
 
-2 Return the shortest string in object (array)
+- 2 Return the shortest string in object (array)
 
-3 "Breaking chocolate pieces", algorithm. How many times do you have to break the "chocolate bar" for grid dimensions x, y
+- 3 "Breaking chocolate pieces", algorithm. How many times do you have to break the "chocolate bar" for grid dimensions x, y
 
-4 Return integers in object (array) in descending order
+- 4 Return integers in object (array) in descending order
 
-5 Write a function, persistence, that takes in a positive parameter num and returns
+- 5 Write a function, persistence, that takes in a positive parameter num and returns
 its multiplicative persistence, which is the number of times you must multiply the
 digits in num until you reach a single digit
 
-6 Return the sum of the two smallest integers in object (array)
+- 6 Return the sum of the two smallest integers in object (array)
 
-7 Reject all array elements (string (names)) that don't have a length of four
+- 7 Reject all array elements (string (names)) that don't have a length of four
 
-8 Write an algorithm that determines whether or not an object (integer) is a prime number
+- 8 Write an algorithm that determines whether or not an object (integer) is a prime number
 
-9 Return an array of all divisors of integer (n), except 1 and (n)
+- 9 Return an array of all divisors of integer (n), except 1 and (n)
 
-10 Return the sum of the multiples of 3 and 5 up to integer (n)
+- 10 Return the sum of the multiples of 3 and 5 up to integer (n)
 
-11 Write a function that will find all the anagrams of a word from a list.
+- 11 Write a function that will find all the anagrams of a word from a list.
 You will be given two inputs a word and an array with words. You should
 return an array of all the anagrams or an empty array if there are none.
 
-12 Write an algorithm that returns, from an object (string), relationships of the like:(), ({}) is correct, (} is incorrect
+- 12 Write an algorithm that returns, from an object (string), relationships of the like:(), ({}) is correct, (} is incorrect
 
-13 Write an algorithm that determines even or odd from a give object (integer)
+- 13 Write an algorithm that determines even or odd from a give object (integer)
 
-14 Count the number of times object (array) "hoola hoops", return concatenated string with answer
+- 14 Count the number of times object (array) "hoola hoops", return concatenated string with answer
 
-15 Finding the next integer value for an array of integers when provided the average that needs to be attained by adding the next integer
+- 15 Finding the next integer value for an array of integers when provided the average that needs to be attained by adding the next integer
 
-16 Return a list of integers 1..n where (n) is given
+- 16 Return a list of integers 1..n where (n) is given
 
-17 Reverse words in a string and return a string (forgot split creates an array, was making nested arrays on accident)
+- 17 Reverse words in a string and return a string (forgot split creates an array, was making nested arrays on accident)
 
-18 Provided these arguments integer integer and operator, which each have parameters, make it run... (.send is cool, just learned it)
+- 18 Provided these arguments integer integer and operator, which each have parameters, make it run... (.send is cool, just learned it)
 
-19 If object (string) is < 5 (integer) turn to 0. if object (string) > 5 and up, turn to 1
+- 19 If object (string) is < 5 (integer) turn to 0. if object (string) > 5 and up, turn to 1
 
-20 How many 'bottles' do you have to buy to make the 'discount' worth it for the 'holiday'
+- 20 How many 'bottles' do you have to buy to make the 'discount' worth it for the 'holiday'
 
-21 Picking flower petals, how much does she love you, she loves you not, etc...
+- 21 Picking flower petals, how much does she love you, she loves you not, etc...
 
-22 The tests are in such a form:
+- 22 The tests are in such a form:
 
 Test.assert_equals(remove("Hi!") , "Hi")
 Test.assert_equals(remove("Hi!!!") ,"Hi!!")
@@ -59,101 +59,101 @@ Test.assert_equals(remove("!Hi!") , "!Hi")
 Test.assert_equals(remove("Hi! Hi!") , "Hi! Hi")
 Test.assert_equals(remove("Hi") , "Hi")
 
-23 Count positive numbers and sum negative numbers in object (array), and return [0][1]
+- 23 Count positive numbers and sum negative numbers in object (array), and return [0][1]
 
-24 Replace all vowels in object (string) with '!'
+- 24 Replace all vowels in object (string) with '!'
 
-25 Return volume of a cube
+- 25 Return volume of a cube
 
-26 Remove smallest and largest values from object (array) and return the sum of whats left, clumsy first try
+- 26 Remove smallest and largest values from object (array) and return the sum of whats left, clumsy first try
 
-27 Special answer for a special someone, concatenated string
+- 27 Special answer for a special someone, concatenated string
 
-28 Return Celsius to Romer formula
+- 28 Return Celsius to Romer formula
 
-29 Return sqrt of object (integer)
+- 29 Return sqrt of object (integer)
 
-30 Take 2 strings and remove the non unique characters, then sort the new string alphabetically and return
+- 30 Take 2 strings and remove the non unique characters, then sort the new string alphabetically and return
 
-(((Issue with test cases being incongruent with description, I noted on codewars)))
-31 Return first half of the letters of an object (string), but improved a little because of test case issue
+*(((Issue with test cases being incongruent with description, I noted on codewars)))*
+- 31 Return first half of the letters of an object (string), but improved a little because of test case issue
 
-32 Return sum of positive integers in object (array), return 0 if empty
+- 32 Return sum of positive integers in object (array), return 0 if empty
 
-33 Take a object (integer) and separate the digits, push into an array, in reversed order, return
+- 33 Take a object (integer) and separate the digits, push into an array, in reversed order, return
 
-34 Change a negative object (integer) to its ABS, change positive integer to negative and return
+- 34 Change a negative object (integer) to its ABS, change positive integer to negative and return
 
-35 Create a string representing a dollar amount from an object (integer or float)
+- 35 Create a string representing a dollar amount from an object (integer or float)
 
-36 Find minimum and maximum values in an object (array)
+- 36 Find minimum and maximum values in an object (array)
 
-37 Return (nth) digit of an object (object)
+- 37 Return (nth) digit of an object (object)
 
-38 Average of an object (array) of integers, returned as whole number
+- 38 Average of an object (array) of integers, returned as whole number
 
-39 Concat arrays, return sorted and unique values
+- 39 Concat arrays, return sorted and unique values
 
-40 Remove all odd numbers from object (array)
+- 40 Remove all odd numbers from object (array)
 
-41 Delete every other element in object (array)
+- 41 Delete every other element in object (array)
 
-42 Make sure the 'watermelon' can be divided so that each (2) people can have an even number of pieces, return
+- 42 Make sure the 'watermelon' can be divided so that each (2) people can have an even number of pieces, return
 
-43 Fix the operation so that it accurately calculates division, run function
+- 43 Fix the operation so that it accurately calculates division, run function
 
-44 Multiply (n) by 5-raised to the power of the number of digits in (n), return integer
+- 44 Multiply (n) by 5-raised to the power of the number of digits in (n), return integer
 
-45 Round down object (integer) with .floor
+- 45 Round down object (integer) with .floor
 
-46 Remove first and last element of an object (array)
+- 46 Remove first and last element of an object (array)
 
-47 Remove the first character from object (string)
+- 47 Remove the first character from object (string)
 
-47 Using MathPI, find circumference of a circle given parameters
+- 47 Using MathPI, find circumference of a circle given parameters
 
-48 Given two points P and Q, output the symmetric point of
+- 48 Given two points P and Q, output the symmetric point of
 point P about Q. Each argument is a two-element array of integers
 representing the point's X and Y coordinates. Output should be in
 the same format, giving the X and Y coordinates of point P1. You do
 not have to validate the input.
 
-49 This function should return the first pair of two prime numbers
+- 49 This function should return the first pair of two prime numbers
 spaced with a gap of g between the limits m, n if these numbers exist otherwise
 nil or null or None or Nothing (depending on the language). In C++ return in such a case {0, 0}.
 
-50 Find the average between each index (integer) of object (array)
+- 50 Find the average between each index (integer) of object (array)
 
-51 Return the Barycenter of a triangle
+- 51 Return the Barycenter of a triangle
 
-52 Find lowest integer that doesn't belong to object (array), greater than 0
+- 52 Find lowest integer that doesn't belong to object (array), greater than 0
 
-53 Find the number of times a character is repeated (char) in object (string)
+- 53 Find the number of times a character is repeated (char) in object (string)
 
-54 Find and print aspect ratio of any give two objects (integers)
+- 54 Find and print aspect ratio of any give two objects (integers)
 
-55 Given a string of integers, count how many times that
+- 55 Given a string of integers, count how many times that
 integer repeats itself, then return a string showing the count and the integer.
 countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)
 
-56 Find the maximum difference in length between 2 objets (strings) in 2 different (arrays)
+- 56 Find the maximum difference in length between 2 objets (strings) in 2 different (arrays)
 
-57 Finding approximate square roots.
+- 57 Finding approximate square roots.
 I couldn't figure out how to deal with rounding to different degrees per test.
 
-58 Calculate tips, object (r == three grades of quality of service ( 1 , 0 , -1)) and 20% tip as object
+- 58 Calculate tips, object (r == three grades of quality of service ( 1 , 0 , -1)) and 20% tip as object
 
-59 Find min and max integers from a object (string) of integers
+- 59 Find min and max integers from a object (string) of integers
 
-60 Extract numbers from a object (string) and return the sum
+- 60 Extract numbers from a object (string) and return the sum
 
-61 Count duplicate characters in object (string)
+- 61 Count duplicate characters in object (string)
 
-62 Round numbers in object (array) to the nearest multiple of 5
+- 62 Round numbers in object (array) to the nearest multiple of 5
 
 
 
-63 Reverse and invert all integer values in a given list.
+- 63 Reverse and invert all integer values in a given list.
 
 Python:
 
@@ -163,7 +163,7 @@ Ignore all other types than integer.
 
 
 
-64 To square(root) or not to square(root)
+- 64 To square(root) or not to square(root)
 
 Write a method, that will get an integer array as parameter and will process every number from this array.
 Return a new array with processing every number of the input-array like this:
@@ -181,7 +181,7 @@ I have created other katas. Have a look if you like coding and challenges.
 
 
 
-65  Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
+- 65  Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
 
 F(n) * F(n+1) = prod.
 Your function productFib takes an integer (prod) and returns an array:
@@ -196,11 +196,11 @@ F(m) being the smallest one such as F(m) * F(m+1) > prod.
 
 
 
-66 Create function that takes one positive three digit integer and rearranges its digits to get maximum possible number. Assume that argument is integer. Return null (nil for ruby) if argument is not valid.
+- 66 Create function that takes one positive three digit integer and rearranges its digits to get maximum possible number. Assume that argument is integer. Return null (nil for ruby) if argument is not valid.
 
 
 
-67 You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
+- 67 You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
 The value of d will always be 0 - 9.
 The value of x will always be greater than 0.
 
@@ -215,23 +215,23 @@ Return: [3, 22, 110]
 
 
 
-68 Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
+- 68 Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
 
 
 
-69 Given a string containing a list of integers separated by commas, write the function string_to_int_list(s) that takes said string and returns a new list containing all integers present in the string, preserving the order.
+- 69 Given a string containing a list of integers separated by commas, write the function string_to_int_list(s) that takes said string and returns a new list containing all integers present in the string, preserving the order.
 
 
 
-70 Find the last element of a list.
+- 70 Find the last element of a list.
 
 
 
-71 A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
+- 71 A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
 
 
 
-72 You are going to be given a string. Your job is to return that string in a certain order that I will explain below:
+- 72 You are going to be given a string. Your job is to return that string in a certain order that I will explain below:
 
 Let's say you start with this: 012345
 
@@ -244,11 +244,11 @@ Continue this pattern until you have done every single position, and then you wi
 
 
 
-73 We need a function that can transform a string into a number. (Thought I'd knock this out for some easy points)
+- 73 We need a function that can transform a string into a number. (Thought I'd knock this out for some easy points)
 
 
 
-74 You start at the first number.
+- 74 You start at the first number.
  If this number x is smaller than 3, take this number x direct
   for the new array and continue with the next number.
  If this number x is greater than 2, take the next x numbers (inclusive this number) as a
@@ -257,10 +257,10 @@ Continue this pattern until you have done every single position, and then you wi
 
 
 
- 75 (from CodeFights last month)
+- 75 (from CodeFights last month)
  Write a function that returns the century for the given year (round up if necessary).
 
 
 
- 76 (from CodeFights last month)
+- 76 (from CodeFights last month)
 Write a function that checks whether input is a palindrome.
