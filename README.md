@@ -27,8 +27,8 @@ digits in num until you reach a single digit
 - 10 Return the sum of the multiples of 3 and 5 up to integer (n)
 
 - 11 Write a function that will find all the anagrams of a word from a list.
-You will be given two inputs a word and an array with words. You should
-return an array of all the anagrams or an empty array if there are none.
+ You will be given two inputs a word and an array with words. You should
+ return an array of all the anagrams or an empty array if there are none.
 
 - 12 Write an algorithm that returns, from an object (string), relationships of the like:(), ({}) is correct, (} is incorrect
 
@@ -52,12 +52,12 @@ return an array of all the anagrams or an empty array if there are none.
 
 - 22 The tests are in such a form:
 
-Test.assert_equals(remove("Hi!") , "Hi")
-Test.assert_equals(remove("Hi!!!") ,"Hi!!")
-Test.assert_equals(remove("!Hi") , "!Hi")
-Test.assert_equals(remove("!Hi!") , "!Hi")
-Test.assert_equals(remove("Hi! Hi!") , "Hi! Hi")
-Test.assert_equals(remove("Hi") , "Hi")
+ Test.assert_equals(remove("Hi!") , "Hi")
+ Test.assert_equals(remove("Hi!!!") ,"Hi!!")
+ Test.assert_equals(remove("!Hi") , "!Hi")
+ Test.assert_equals(remove("!Hi!") , "!Hi")
+ Test.assert_equals(remove("Hi! Hi!") , "Hi! Hi")
+ Test.assert_equals(remove("Hi") , "Hi")
 
 - 23 Count positive numbers and sum negative numbers in object (array), and return [0][1]
 
@@ -113,14 +113,14 @@ Test.assert_equals(remove("Hi") , "Hi")
 - 47 Using MathPI, find circumference of a circle given parameters
 
 - 48 Given two points P and Q, output the symmetric point of
-point P about Q. Each argument is a two-element array of integers
-representing the point's X and Y coordinates. Output should be in
-the same format, giving the X and Y coordinates of point P1. You do
-not have to validate the input.
+ point P about Q. Each argument is a two-element array of integers
+ representing the point's X and Y coordinates. Output should be in
+ the same format, giving the X and Y coordinates of point P1. You do
+ not have to validate the input.
 
 - 49 This function should return the first pair of two prime numbers
-spaced with a gap of g between the limits m, n if these numbers exist otherwise
-nil or null or None or Nothing (depending on the language). In C++ return in such a case {0, 0}.
+ spaced with a gap of g between the limits m, n if these numbers exist otherwise
+ nil or null or None or Nothing (depending on the language). In C++ return in such a case {0, 0}.
 
 - 50 Find the average between each index (integer) of object (array)
 
@@ -133,13 +133,13 @@ nil or null or None or Nothing (depending on the language). In C++ return in suc
 - 54 Find and print aspect ratio of any give two objects (integers)
 
 - 55 Given a string of integers, count how many times that
-integer repeats itself, then return a string showing the count and the integer.
-countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)
+ integer repeats itself, then return a string showing the count and the integer.
+ countMe('211213') will return '1221121113' (1 time 2, 2 times 1, 1 time 2, 1 time 1, 1 time 3)
 
 - 56 Find the maximum difference in length between 2 objets (strings) in 2 different (arrays)
 
 - 57 Finding approximate square roots.
-I couldn't figure out how to deal with rounding to different degrees per test.
+ I couldn't figure out how to deal with rounding to different degrees per test.
 
 - 58 Calculate tips, object (r == three grades of quality of service ( 1 , 0 , -1)) and 20% tip as object
 
@@ -155,44 +155,44 @@ I couldn't figure out how to deal with rounding to different degrees per test.
 
 - 63 Reverse and invert all integer values in a given list.
 
-Python:
+ Python:
 
-reverse_invert([1 , 12 , 'a' , 3.4 , 87 , 99.9 , -42 , 50 , 5.6]) = [-1 , -21 , -78 , 24 , -5]
+ reverse_invert([1 , 12 , 'a' , 3.4 , 87 , 99.9 , -42 , 50 , 5.6]) = [-1 , -21 , -78 , 24 , -5]
 
-Ignore all other types than integer.
+ Ignore all other types than integer.
 
 
 
 - 64 To square(root) or not to square(root)
 
-Write a method, that will get an integer array as parameter and will process every number from this array.
-Return a new array with processing every number of the input-array like this:
+ Write a method, that will get an integer array as parameter and will process every number from this array.
+ Return a new array with processing every number of the input-array like this:
 
-If the number has an integer square root, take this, otherwise square the number.
+ If the number has an integer square root, take this, otherwise square the number.
 
-[ 4 , 3 , 9 , 7 , 2 , 1 ] -> [ 2 , 9 , 3 , 49 , 4 , 1 ]
-The input array will always contain only positive numbers and will never be empty or null.
+ [ 4 , 3 , 9 , 7 , 2 , 1 ] -> [ 2 , 9 , 3 , 49 , 4 , 1 ]
+ The input array will always contain only positive numbers and will never be empty or null.
 
-The input array should not be modified!
+ The input array should not be modified!
 
-Have fun coding it and please don't forget to vote and rank this kata! :-)
+ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
-I have created other katas. Have a look if you like coding and challenges.
+ I have created other katas. Have a look if you like coding and challenges.
 
 
 
 - 65  Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
 
-F(n) * F(n+1) = prod.
-Your function productFib takes an integer (prod) and returns an array:
+ F(n) * F(n+1) = prod.
+ Your function productFib takes an integer (prod) and returns an array:
+ 
+ [F(n), F(n+1), true]
+ depending on the language if F(n) * F(n+1) = prod.
 
-[F(n), F(n+1), true]
-depending on the language if F(n) * F(n+1) = prod.
+ If you don't find two consecutive F(m) verifying F(m) * F(m+1) = prod you will return
 
-If you don't find two consecutive F(m) verifying F(m) * F(m+1) = prod you will return
-
-[F(m), F(m+1), false]
-F(m) being the smallest one such as F(m) * F(m+1) > prod.
+ [F(m), F(m+1), false]
+ F(m) being the smallest one such as F(m) * F(m+1) > prod.
 
 
 
@@ -201,17 +201,17 @@ F(m) being the smallest one such as F(m) * F(m+1) > prod.
 
 
 - 67 You have to search all numbers from inclusive 1 to inclusive a given number x, that have the given digit d in it.
-The value of d will always be 0 - 9.
-The value of x will always be greater than 0.
+ The value of d will always be 0 - 9.
+ The value of x will always be greater than 0.
 
-You have to return as an array
+ You have to return as an array
 
-the count of these numbers, their sum, and their product.
+ the count of these numbers, their sum, and their product.
 
-x = 11
-d = 1
-Numbers: 1, 10, 11
-Return: [3, 22, 110]
+ x = 11
+ d = 1
+ Numbers: 1, 10, 11
+ Return: [3, 22, 110]
 
 
 
@@ -233,14 +233,14 @@ Return: [3, 22, 110]
 
 - 72 You are going to be given a string. Your job is to return that string in a certain order that I will explain below:
 
-Let's say you start with this: 012345
+ Let's say you start with this: 012345
 
-The first thing you do is reverse it: 543210
-Then you will take the string from the 1st position and reverse it again: 501234
-Then you will take the string from the 2nd position and reverse it again: 504321
-Then you will take the string from the 3rd position and reverse it again: 504123
+ The first thing you do is reverse it: 543210
+ Then you will take the string from the 1st position and reverse it again: 501234
+ Then you will take the string from the 2nd position and reverse it again: 504321
+ Then you will take the string from the 3rd position and reverse it again: 504123
 
-Continue this pattern until you have done every single position, and then you will return the string you have created. For this particular number, you would return: 504132
+ Continue this pattern until you have done every single position, and then you will return the string you have created. For  this particular number, you would return: 504132
 
 
 
@@ -263,4 +263,4 @@ Continue this pattern until you have done every single position, and then you wi
 
 
 - 76 (from CodeFights last month)
-Write a function that checks whether input is a palindrome.
+ Write a function that checks whether input is a palindrome.
