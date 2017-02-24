@@ -254,3 +254,13 @@ Continue this pattern until you have done every single position, and then you wi
  If this number x is greater than 2, take the next x numbers (inclusive this number) as a
   sub-array in the new array. Continue with the next number AFTER this taken numbers.
  If there are too few numbers to take by number, take the last available numbers.
+
+
+
+ 75 (from CodeFights last month)
+ Write a function that returns the century for the given year (round up if necessary).
+
+
+
+ 76 (from CodeFights last month)
+Write a function that checks whether input is a palindrome.
