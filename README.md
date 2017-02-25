@@ -185,7 +185,7 @@ digits in num until you reach a single digit
 
  F(n) * F(n+1) = prod.
  Your function productFib takes an integer (prod) and returns an array:
- 
+
  [F(n), F(n+1), true]
  depending on the language if F(n) * F(n+1) = prod.
 
@@ -264,3 +264,14 @@ digits in num until you reach a single digit
 
 - 76 (from CodeFights last month)
  Write a function that checks whether input is a palindrome.
+
+
+- 77 You will be given two dimensions, imagine a rectangle, write an algorithm that returns in an array a list of   
+ SQUARES that == the area of the rectangle
+
+ a positive integer length (parameter named lng)
+ a positive integer width (parameter named wdth)
+ You will return an array with the size of each of the squares.
+
+  sqInRect(5, 3) should return [3, 2, 1, 1]
+  sqInRect(3, 5) should return [3, 2, 1, 1]

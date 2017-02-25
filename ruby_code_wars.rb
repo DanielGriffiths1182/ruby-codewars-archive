@@ -818,3 +818,21 @@ def checkPalindrome(inputString)
         false
     end
 end
+
+#77 You will be given two dimensions, imagine a rectangle, write an algorithm that returns in an array a list of
+#   SQUARES that == the area of the rectangle 
+def sqInRect(lng, wdth)
+  answer = []
+  if lng == wdth
+    return nil
+  end
+  while lng > 0 && wdth > 0
+    answer.push([lng, wdth].min)
+    if lng >= wdth
+      lng -= wdth
+    else
+      wdth -= lng
+    end
+  end
+  return answer
+end
