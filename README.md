@@ -285,7 +285,7 @@ digits in num until you reach a single digit
  Write a function that will take the number of petals of each flower and return true if they are in love and false
  if they aren't.
 
- - 80 Positive integers that are divisible exactly by the sum of their digits are called Harshad numbers, see
+- 80 Positive integers that are divisible exactly by the sum of their digits are called Harshad numbers, see
  Wikipedia for further details.
  Write a function numberJoy() which tests if a positive integer n is Harshad and returns True if the product of its
  digit sum, and its digit sum reversed, equals n. Otherwise return False.
