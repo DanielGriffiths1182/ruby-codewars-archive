@@ -846,7 +846,15 @@ def countSheeps array
   return count
 end
 
-# 70 One flowers petals are even and one flowers petals are odd == true, else false
+# 79 One flowers petals are even and one flowers petals are odd == true, else false
 def lovefunc( flower1, flower2 )
   (flower1 + flower2).odd?
+end
+
+# 80 Write a function numberJoy() which tests if a positive integer n is Harshad,
+# and returns True if the product of its digit sum, and its digit sum reversed, equals n. Otherwise return False.
+def number_joy(n)
+  dig = n.to_s.split('').map(&:to_i)
+  sum = dig.inject(:+)
+  sum * sum.to_s.reverse.to_i == n ? true : false
 end
