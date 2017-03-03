@@ -820,7 +820,7 @@ def checkPalindrome(inputString)
 end
 
 #77 You will be given two dimensions, imagine a rectangle, write an algorithm that returns in an array a list of
-#   SQUARES that == the area of the rectangle 
+#   SQUARES that == the area of the rectangle
 def sqInRect(lng, wdth)
   answer = []
   if lng == wdth
@@ -835,4 +835,18 @@ def sqInRect(lng, wdth)
     end
   end
   return answer
+end
+
+# 78 Given array with False/True in every index, count the number of True cases in the array. Simple.
+def countSheeps array
+  count = 0
+  for x in array do
+    x == true ? count +=1 : count + 0
+  end
+  return count
+end
+
+# 70 One flowers petals are even and one flowers petals are odd == true, else false
+def lovefunc( flower1, flower2 )
+  (flower1 + flower2).odd?
 end
