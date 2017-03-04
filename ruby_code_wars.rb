@@ -858,3 +858,8 @@ def number_joy(n)
   sum = dig.inject(:+)
   sum * sum.to_s.reverse.to_i == n ? true : false
 end
+
+#  81 Identical Elements - compare arrays, return boolean depending whether or not they contain any same values.
+def duplicate_elements(m, n)
+  !(n & m).empty?
+end

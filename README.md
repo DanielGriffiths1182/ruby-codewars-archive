@@ -289,3 +289,5 @@ digits in num until you reach a single digit
  Wikipedia for further details.
  Write a function numberJoy() which tests if a positive integer n is Harshad and returns True if the product of its
  digit sum, and its digit sum reversed, equals n. Otherwise return False.
+
+- 81 Identical Elements - compare arrays, return boolean depending whether or not they contain any same values.
