@@ -290,8 +290,8 @@ digits in num until you reach a single digit
  Write a function numberJoy() which tests if a positive integer n is Harshad and returns True if the product of its
  digit sum, and its digit sum reversed, equals n. Otherwise return False.
 
-- 81 Identical Elements - compare arrays, return boolean depending whether or not they contain any same values.
+- 81 "Identical Elements" - compare arrays, return boolean depending whether or not they contain any same values.
 
-- 82 We need a simple function that determines if a plural is needed or not. It should take a number, and return
- true if a plural should be used with that number or false if not. This would be useful when printing out a string
- such as 5 minutes, 14 apples, or 1 sun.
+- 82 "Plural" - We need a simple function that determines if a plural is needed or not. It should take a number, and
+ return true if a plural should be used with that number or false if not. This would be useful when printing out a
+ string such as 5 minutes, 14 apples, or 1 sun.
