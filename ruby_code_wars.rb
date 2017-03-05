@@ -881,3 +881,10 @@ end
 def two_sort(s)
   s.sort[0].chars.join("***")
 end
+
+#  84 "Get list sum recursively" - Write function sumR which returns the sum of values in a given list.
+#     Try no to cheat and provide recursive solution.
+def sum_r(x)
+  return 0 if x.empty?
+  x[0] + sum_r(x[1..-1])
+end
