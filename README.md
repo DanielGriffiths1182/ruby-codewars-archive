@@ -295,3 +295,7 @@ digits in num until you reach a single digit
 - 82 "Plural" - We need a simple function that determines if a plural is needed or not. It should take a number, and
  return true if a plural should be used with that number or false if not. This would be useful when printing out a
  string such as 5 minutes, 14 apples, or 1 sun.
+
+- 83 "Sort and Star" - You will be given an vector of string(s). You must sort it alphabetically (case-sensitive!!)  
+ and then return the first value.
+ The returned value must be a string, and have '*** ' between each of its letters.
