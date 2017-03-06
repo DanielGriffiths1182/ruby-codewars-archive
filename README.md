@@ -302,3 +302,7 @@ digits in num until you reach a single digit
 
 - 84 "Get list sum recursively" - Write function sumR which returns the sum of values in a given list. Try no to
  cheat and provide recursive solution.
+
+- 85 "Rearrange Number to Get its Maximum" - Create function that takes one positive three digit integer and
+ rearranges its digits to get maximum possible number. Assume that argument is integer. Return null (nil for ruby) if
+ argument is not valid.

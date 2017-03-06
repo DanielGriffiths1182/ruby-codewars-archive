@@ -888,3 +888,14 @@ def sum_r(x)
   return 0 if x.empty?
   x[0] + sum_r(x[1..-1])
 end
+
+#  85 "Rearange Number to Get its Maximum" - Create function that takes one positive three digit integer
+#     and rearranges its digits to get maximum possible number. Assume that argument is integer.
+#     Return null (nil for ruby) if argument is not valid.
+def max_redigit(num)
+  if num > 99 && num.to_s != num.to_s.reverse && num < 1000
+    num.to_s.split('').sort.reverse.map(&:to_i).join.to_i
+  else
+    nil
+  end
+end
