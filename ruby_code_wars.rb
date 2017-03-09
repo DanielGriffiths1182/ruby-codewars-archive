@@ -904,3 +904,10 @@ end
 def square_area_to_circle(size)
   return size * Math::PI / 4
 end
+
+#  87 "The Mean of Two Means" - . The function should return the mean between the mean of the the first
+#   x elements of the array and the mean of the last y elements of the array.
+def get_mean(arr, x, y)
+  return -1 if x < 2 || y > arr.size || (y <= 1)
+  ((arr[0..(x - 1)].inject(:+) / x.to_f + arr[-y..-1].inject(:+) / y.to_f) / 2.0)
+end
