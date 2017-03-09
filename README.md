@@ -306,3 +306,5 @@ digits in num until you reach a single digit
 - 85 "Rearrange Number to Get its Maximum" - Create function that takes one positive three digit integer and
  rearranges its digits to get maximum possible number. Assume that argument is integer. Return null (nil for ruby) if
  argument is not valid.
+
+- 86 86 "Circle area inside square" - Turn an area of a square in to an area of a circle that fits perfectly inside the square.
