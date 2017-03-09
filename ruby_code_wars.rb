@@ -902,6 +902,5 @@ end
 
 #  86 "Circle area inside square" - Turn an area of a square in to an area of a circle that fits perfectly inside the square.
 def square_area_to_circle(size)
-  dia = (Math.sqrt(size))
-  return dia ** 2 * Math::PI / 4
+  return size * Math::PI / 4
 end
