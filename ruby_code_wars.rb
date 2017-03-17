@@ -911,3 +911,10 @@ def get_mean(arr, x, y)
   return -1 if x < 2 || y > arr.size || (y <= 1)
   ((arr[0..(x - 1)].inject(:+) / x.to_f + arr[-y..-1].inject(:+) / y.to_f) / 2.0)
 end
+
+#  88 (LVL 8) "Is Upcase" - Create a method is_uppercase() to see whether the string is ALL CAPS.
+class String
+  def is_upcase?
+    self.upcase == self
+  end
+end

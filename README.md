@@ -320,3 +320,5 @@ digits in num until you reach a single digit
  getMean([1,3,2,4], 1, 2) should return -1 because x is not higher than 1.
 
  getMean([1,3,2,4], 2, 8) should return -1 because 8 is higher than the array's length.
+
+- 88 (LVL 8) "Is Upcase" - Create a method is_uppercase() to see whether the string is ALL CAPS. 
