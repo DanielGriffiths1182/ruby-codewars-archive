@@ -321,4 +321,6 @@ digits in num until you reach a single digit
 
  getMean([1,3,2,4], 2, 8) should return -1 because 8 is higher than the array's length.
 
-- 88 (LVL 8) "Is Upcase" - Create a method is_uppercase() to see whether the string is ALL CAPS. 
+- 88 (LVL 8) "Is Upcase" - Create a method is_uppercase() to see whether the string is ALL CAPS.
+
+- 89 (LVL 8) "Remove exclamation marks" - Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
