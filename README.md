@@ -330,3 +330,8 @@ digits in num until you reach a single digit
 
 - 90 (LVL 8) "Square(n) Sum" - Complete the squareSum method so that it squares each number passed into it and then sums the results
  together.
+
+- 91 (LVL 8) "Grasshopper - Basic Function Fixer" - I created this function to add five to any number that was passed in to it and return
+ the new value. It doesn't throw any errors but it returns the wrong number.
+
+ Can you help me fix the function?
