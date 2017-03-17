@@ -327,3 +327,6 @@ digits in num until you reach a single digit
 - 88 (LVL 8) "Is Upcase" - Create a method is_uppercase() to see whether the string is ALL CAPS.
 
 - 89 (LVL 8) "Remove exclamation marks" - Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+- 90 (LVL 8) "Square(n) Sum" - Complete the squareSum method so that it squares each number passed into it and then sums the results
+ together.

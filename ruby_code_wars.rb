@@ -923,3 +923,8 @@ end
 def remove_exclamation_marks(s)
   s.delete("!")
 end
+
+#  90 (LVL 8) "Square(n) Sum" - Complete the squareSum method so that it squares each number passed into it and then sums the results together.
+def squareSum(numbers)
+  number.map { |i| i ** 2 }.reduce(0, :+)
+end
